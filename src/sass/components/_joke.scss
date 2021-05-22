@@ -23,11 +23,25 @@
         font-weight: 300;
         border: 3px solid red;
         box-shadow: 0 10px 38px rgba(0, 0, 0, 0.2), 0 10px 12px rgba(0, 0, 0, 0.1);
+
+        @include respond(phone) {
+            width: 4rem;
+            height: 4rem;
+            line-height: 0.5;
+            font-size: 15px;
+            padding: 1rem;
+            margin: 0 auto;
+        }
     }
 
     &__text {
         width: 75%;
         font-size: 2rem;
+        @include respond(phone) {
+            font-size: 1.5rem;
+            width: 65%;
+            margin-left: 1rem;
+        }
     }
 
     .fa-arrow-up,
@@ -36,6 +50,9 @@
         margin: 10px;
         cursor: pointer;
         transition: all 0.3s;
+        @include respond(phone) {
+            margin: 3px;
+        }
     }
     .fa-arrow-up:hover {
         animation-name: move-up;
@@ -59,6 +76,10 @@
             animation-duration: 0.7s;
             animation-timing-function: ease-in-out;
             animation-delay: 0s;
+        }
+        @include respond(phone) {
+            font-size: 2rem;
+            margin-left: 1rem;
         }
     }
 }
