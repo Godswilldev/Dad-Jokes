@@ -95,7 +95,7 @@ class JokeList extends Component {
               onClick={this.handleClick}
               className="jokelist__sidebar--btn"
             >
-              Fetch Jokes
+              Fetch New Jokes
             </button>
           </div>
           <div className="jokelist__jokes">
